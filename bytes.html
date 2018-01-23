@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    
+<meta charset="utf-8">
+<title>Перевод Байт</title>
+    
+</head>
+<body>
+        <h2>Конвертер байт</h2>
+    
+    <table cellpadding="4" width="80%">
+				<tr bgcolor="#E0E0E0">
+					<td width="30%"><strong>Единица</strong></td>
+					<td width="30%"><strong>Аббревиатура</strong></td>
+					<td width="30%"><strong>Сколько</strong></td>
+				</tr>
+				<tr>
+					<td>байт</td>
+					<td>Б</td>
+				</tr>
+				<tr>
+					<td>килобайт</td>
+					<td>КБайт (KБ)</td>
+					<td>1000 байта</td>
+				</tr>
+				<tr>
+					<td>мегабайт</td>
+					<td>МБайт (МБ)</td>
+					<td>1000 килобайта</td>
+				</tr>
+				<tr>
+					<td>гигабайт</td>
+					<td>ГБайт (ГБ)</td>
+					<td>1000 мегабайта</td>
+				</tr>
+				<tr>
+					<td>терабайт</td>
+					<td>ТБайт (ТБ)</td>
+					<td>1000 гигабайта</td>
+				</tr>
+			</table>
+    
+    
+    <table id="converter" align="center">
+    
+    <tr align="center">
+    <td class="border" width="400" height="350" bgcolor="#ffffff">
+        
+    <form action="bytes.php" method="post">
+    
+    <p>Перевести</p>
+    
+    <input type="number" name="number" placeholder="Введите число">
+    
+    <select name="select1">
+    <option value="1">байты (Б)</option>
+    <option value="2">килобайты (КБ)</option>
+    <option value="3">мегабайты (МБ)</option>
+    <option value="4">гигабайты (ГБ)</option>
+    <option value="5">терабайты (ТБ)</option>
+    </select>
+    
+    <p>в</p>
+    
+    <select name="select2">
+    <option value="1">байты (Б)</option>
+    <option value="2">килобайты (КБ)</option>
+    <option value="3">мегабайты (МБ)</option>
+    <option value="4">гигабайты (ГБ)</option>
+    <option value="5">терабайты (ТБ)</option>
+    </select>
+    
+    <br>
+    <br>
+        
+    <input type="submit" value="Перевести" name="submit">
+        
+    </td>
+    </tr>
+    
+    </form>
+    </table>
+    
+</body>
+</html>
