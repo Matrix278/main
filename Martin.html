@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Martin</title>
+</head>
+
+<body>
+<canvas height="1080" width="1960" id="example"></canvas>
+<script>
+
+	var example=document.getElementById("example");
+	ctx=example.getContext('2d');
+	function drawM(newX,newY,size){
+	ctx.beginPath();
+	ctx.moveTo(newX+300*size, newY+300*size);
+	ctx.lineTo(newX+400*size, newY+300*size);
+	ctx.lineTo(newX+500*size, newY+500*size);
+	ctx.lineTo(newX+600*size, newY+300*size);
+	ctx.lineTo(newX+700*size, newY+300*size);
+	ctx.lineTo(newX+700*size, newY+900*size); 
+	ctx.lineTo(newX+600*size, newY+900*size);
+	ctx.lineTo(newX+600*size, newY+600*size);
+	ctx.lineTo(newX+550*size, newY+700*size);
+    ctx.lineTo(newX+450*size, newY+700*size);
+    ctx.lineTo(newX+400*size, newY+600*size);
+    ctx.lineTo(newX+400*size, newY+900*size);
+    ctx.lineTo(newX+300*size, newY+900*size);
+    ctx.lineTo(newX+300*size, newY+300*size);
+    
+	ctx.stroke();
+    ctx.fillStyle='green';
+    ctx.fill();
+	}
+	drawM(0, 14, 0.3);
+
+	var example=document.getElementById("example");
+	ctx=example.getContext('2d');
+	function drawA(newX, newY, size){
+	ctx.beginPath();
+	ctx.moveTo(newX+500*size, newY+200*size);   //1
+	ctx.lineTo(newX+650*size, newY+200*size);   //2
+	ctx.lineTo(newX+1000*size, newY+900*size);  //3
+	ctx.lineTo(newX+800*size, newY+900*size);   //4
+	ctx.lineTo(newX+700*size, newY+700*size);   //5
+	ctx.lineTo(newX+700*size, newY+700*size);   //6
+	ctx.lineTo(newX+450*size, newY+700*size);   //7
+	ctx.lineTo(newX+350*size, newY+900*size);   //8
+	ctx.lineTo(newX+150*size, newY+900*size);   //9
+	ctx.lineTo(newX+500*size, newY+200*size);   //10
+	ctx.stroke();
+	ctx.fillStyle = '#80ff80'; 
+	ctx.fill();  
+
+	ctx.beginPath();
+	ctx.moveTo(newX+500*size, newY+550*size);   //1
+	ctx.lineTo(newX+650*size, newY+550*size);   //2
+	ctx.lineTo(newX+575*size, newY+400*size);   //3
+	ctx.stroke(); 
+	ctx.fillStyle = 'white'; 
+	ctx.fill();
+	}
+	drawA(190, 58.5, 0.25);
+	
+	var example=document.getElementById("example");
+    ctx=example.getContext('2d')
+	function drawR(newX, newY, size){
+	ctx.beginPath();
+	ctx.moveTo(newX+20*size,newY+20*size);
+	ctx.lineTo(newX+140*size,newY+20*size);
+	ctx.quadraticCurveTo(newX+200*size,newY+20*size,newX+200*size, newY+100*size);
+	ctx.quadraticCurveTo(newX+200*size,newY+180*size,newX+140*size, newY+180*size);
+	ctx.lineTo(newX+60*size,newY+180*size);
+	ctx.lineTo(newX+60*size,newY+300*size);
+	ctx.lineTo(newX+20*size,newY+300*size);
+	ctx.lineTo(newX+20*size,newY+20*size);
+	ctx.fillStyle= '#990000'
+	ctx.fill();
+
+	ctx.beginPath();
+	ctx.moveTo(newX+60*size,newY+60*size);
+	ctx.lineTo(newX+100*size,newY+60*size);
+	ctx.quadraticCurveTo(newX+160*size,newY+60*size,newX+160*size, newY+100*size);
+	ctx.quadraticCurveTo(newX+160*size,newY+140*size,newX+100*size, newY+140*size);
+	ctx.lineTo(newX+60*size,newY+140*size);
+	ctx.lineTo(newX+60*size,newY+60*size);
+	ctx.fillStyle= '#ffffff'
+	ctx.fill();
+	}
+	drawR(435, 90, 0.65);
+
+	var example=document.getElementById("example");
+    ctx=example.getContext('2d')
+	function drawT(newX, newY, size){
+	ctx.beginPath();
+    ctx.moveTo(newX+200*size, newY+200*size);
+	ctx.lineTo(newX+200*size, newY+200*size);
+	ctx.lineTo(newX+650*size, newY+200*size);
+	ctx.lineTo(newX+650*size, newY+300*size);
+	ctx.lineTo(newX+500*size, newY+300*size);
+    ctx.lineTo(newX+500*size, newY+600*size);
+	ctx.lineTo(newX+350*size, newY+600*size);
+	ctx.lineTo(newX+350*size, newY+300*size);
+	ctx.lineTo(newX+200*size, newY+300*size);
+	ctx.lineTo(newX+200*size, newY+200*size);
+    ctx.stroke();
+	ctx.fillStyle= '#e65c00';
+    ctx.fill();
+	}
+	drawT(480, 12, 0.45);
+	
+	var example=document.getElementById("example");
+	ctx=example.getContext('2d');
+	function drawI(newX, newY, size){
+	ctx.beginPath();
+	ctx.moveTo(newX+150*size,newY+150*size);
+	ctx.lineTo(newX+200*size,newY+150*size);
+	ctx.lineTo(newX+200*size,newY+400*size);
+	ctx.lineTo(newX+150*size,newY+400*size);
+	ctx.lineTo(newX+150*size,newY+150*size);
+	ctx.moveTo(newX+200*size,newY+300*size);
+	ctx.lineTo(newX+200*size,newY+400*size);
+	ctx.lineTo(newX+300*size,newY+150*size);
+	ctx.lineTo(newX+250*size,newY+150*size);
+	ctx.lineTo(newX+200*size,newY+300*size);
+
+	ctx.stroke();
+	ctx.fillStyle= '#737373'
+	ctx.fill();
+	
+	ctx.beginPath();
+	ctx.moveTo(newX+250*size,newY+150*size);
+	ctx.lineTo(newX+300*size,newY+150*size);
+	ctx.lineTo(newX+300*size,newY+400*size);
+	ctx.lineTo(newX+250*size,newY+400*size);
+	ctx.lineTo(newX+250*size,newY+150*size);
+	ctx.stroke();
+	ctx.fillStyle= '#737373'
+	ctx.fill();
+	}
+	drawI(680, 0, 0.7);
+	
+	function drawН(x, y, multiplay) {
+    var example = document.getElementById("example")
+    ctx = example.getContext("2d")
+    ctx.beginPath()
+
+    ctx.moveTo(x+25*multiplay, y+25*multiplay)
+                
+    ctx.lineTo(x+25*multiplay, y+100*multiplay)
+    ctx.lineTo(x+40*multiplay, y+100*multiplay)
+    ctx.lineTo(x+40*multiplay, y+65*multiplay)
+    ctx.lineTo(x+80*multiplay, y+65*multiplay)
+    ctx.lineTo(x+80*multiplay, y+100*multiplay)
+    ctx.lineTo(x+95*multiplay, y+100*multiplay)
+    ctx.lineTo(x+95*multiplay, y+25*multiplay)
+    ctx.lineTo(x+80*multiplay, y+25*multiplay)
+    ctx.lineTo(x+80*multiplay, y+55*multiplay)
+    ctx.lineTo(x+40*multiplay, y+55*multiplay)
+    ctx.lineTo(x+40*multiplay, y+25*multiplay)
+    ctx.lineTo(x+25*multiplay, y+25*multiplay)
+
+    ctx.fillStyle = 'black'
+    ctx.fill()
+    ctx.stroke()
+    }
+    drawН(850, 42, 2.4);
+</script>
