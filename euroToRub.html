@@ -1,0 +1,49 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Перевод рублей в евро</title>
+  <style>
+  body{
+    background-color: #d9d9d9;
+  }
+  #Eur, #Rub{
+    width: 200px;
+    height: 70px;
+    margin-right: 70px;
+    font-size: 40px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+  }
+  #p1{
+    margin-right: 70px;
+    font-size: 20px;
+  }
+  #p2{
+    font-size: 20px;
+
+  }
+  </style>
+</head>
+<body>
+  <h1 align="center" style="margin-right: 70px;">Перевод рублей в евро</h1>
+  <p align="center" id="p1">Текущий курс обмена RUB/EUR - 0.014 (обновлено 12 ноября 2017 13:40:07 UTC).</p>
+  <p align="center" id="p1">1 RUB = 0.0144 EUR; 1 EUR = 69.0227 RUB</p>
+
+  <form align="center" style="margin-top: 200px;">
+    <span style="font-size: 45px; margin-right: 25px;">₽</span>
+    <input type="number" name="rub" value="1" id="Rub" oninput="moneyConverter(this.value)" onchange="moneyConverter(this.value)">
+
+    <span style="font-size: 45px; margin-right: 25px;">€</span>
+    <input type="number" name="euro" value="0.014" id="Eur"><br><br>
+</form>
+
+<form action="rubToEuro.html">
+    <button align="center" style="width: 200px; height: 50px; font-size: 20px; color: red;" type="submit" name="submit">Поменять местами</button>
+  </form>
+  <script>
+  function moneyConverter(valNum){
+    document.getElementById('Eur').value=valNum*0.0144;
+  }
+  </script>
+</body>
+</html>
