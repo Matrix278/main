@@ -1,0 +1,169 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Рисовалка</title>
+    <style>
+        .board{
+            margin: 100px auto;
+        }
+        .board td {
+            border: 1px solid #ccc;
+            width: 50px;
+            height: 50px;
+        }
+        .board td:hover{
+            border: 1px solid #666;
+            box-shadow:2px 2px 2px rgba(0,0,0,0.5);
+        }
+    </style>
+    </head>
+    <body>
+        <table class="board">
+            <tr>
+                <td onclick="cellColorChange(this)" id="cellx0y0"></td>
+                <td onclick="cellColorChange(this)" id="cellx1y0"></td>
+                <td onclick="cellColorChange(this)" id="cellx2y0"></td>
+                <td onclick="cellColorChange(this)" id="cellx3y0"></td>
+                <td onclick="cellColorChange(this)" id="cellx4y0"></td>
+                <td onclick="cellColorChange(this)" id="cellx5y0"></td>
+                <td onclick="cellColorChange(this)" id="cellx6y0"></td>
+                <td onclick="cellColorChange(this)" id="cellx7y0"></td>
+                <td onclick="cellColorChange(this)" id="cellx8y0"></td>
+                <td onclick="cellColorChange(this)" id="cellx9y0"></td>
+            </tr>
+            <tr>
+                <td onclick="cellColorChange(this)" id="cellx0y1"></td>
+                <td onclick="cellColorChange(this)" id="cellx1y1"></td>
+                <td onclick="cellColorChange(this)" id="cellx2y1"></td>
+                <td onclick="cellColorChange(this)" id="cellx3y1"></td>
+                <td onclick="cellColorChange(this)" id="cellx4y1"></td>
+                <td onclick="cellColorChange(this)" id="cellx5y1"></td>
+                <td onclick="cellColorChange(this)" id="cellx6y1"></td>
+                <td onclick="cellColorChange(this)" id="cellx7y1"></td>
+                <td onclick="cellColorChange(this)" id="cellx8y1"></td>
+                <td onclick="cellColorChange(this)" id="cellx9y1"></td>
+            </tr>
+            <tr>
+                <td onclick="cellColorChange(this)" id="cellx0y2"></td>
+                <td onclick="cellColorChange(this)" id="cellx1y2"></td>
+                <td onclick="cellColorChange(this)" id="cellx2y2"></td>
+                <td onclick="cellColorChange(this)" id="cellx3y2"></td>
+                <td onclick="cellColorChange(this)" id="cellx4y2"></td>
+                <td onclick="cellColorChange(this)" id="cellx5y2"></td>
+                <td onclick="cellColorChange(this)" id="cellx6y2"></td>
+                <td onclick="cellColorChange(this)" id="cellx7y2"></td>
+                <td onclick="cellColorChange(this)" id="cellx8y2"></td>
+                <td onclick="cellColorChange(this)" id="cellx9y2"></td>
+            </tr>
+            <tr>
+                <td onclick="cellColorChange(this)" id="cellx0y3"></td>
+                <td onclick="cellColorChange(this)" id="cellx1y3"></td>
+                <td onclick="cellColorChange(this)" id="cellx2y3"></td>
+                <td onclick="cellColorChange(this)" id="cellx3y3"></td>
+                <td onclick="cellColorChange(this)" id="cellx4y3"></td>
+                <td onclick="cellColorChange(this)" id="cellx5y3"></td>
+                <td onclick="cellColorChange(this)" id="cellx6y3"></td>
+                <td onclick="cellColorChange(this)" id="cellx7y3"></td>
+                <td onclick="cellColorChange(this)" id="cellx8y3"></td>
+                <td onclick="cellColorChange(this)" id="cellx9y3"></td>
+            </tr>
+            <tr>
+                <td onclick="cellColorChange(this)" id="cellx0y4"></td>
+                <td onclick="cellColorChange(this)" id="cellx1y4"></td>
+                <td onclick="cellColorChange(this)" id="cellx2y4"></td>
+                <td onclick="cellColorChange(this)" id="cellx3y4"></td>
+                <td onclick="cellColorChange(this)" id="cellx4y4"></td>
+                <td onclick="cellColorChange(this)" id="cellx5y4"></td>
+                <td onclick="cellColorChange(this)" id="cellx6y4"></td>
+                <td onclick="cellColorChange(this)" id="cellx7y4"></td>
+                <td onclick="cellColorChange(this)" id="cellx8y4"></td>
+                <td onclick="cellColorChange(this)" id="cellx9y4"></td>
+            </tr>
+            <tr>
+                <td onclick="cellColorChange(this)" id="cellx0y5"></td>
+                <td onclick="cellColorChange(this)" id="cellx1y5"></td>
+                <td onclick="cellColorChange(this)" id="cellx2y5"></td>
+                <td onclick="cellColorChange(this)" id="cellx3y5"></td>
+                <td onclick="cellColorChange(this)" id="cellx4y5"></td>
+                <td onclick="cellColorChange(this)" id="cellx5y5"></td>
+                <td onclick="cellColorChange(this)" id="cellx6y5"></td>
+                <td onclick="cellColorChange(this)" id="cellx7y5"></td>
+                <td onclick="cellColorChange(this)" id="cellx8y5"></td>
+                <td onclick="cellColorChange(this)" id="cellx9y5"></td>
+            </tr>
+            <tr>
+                <td onclick="cellColorChange(this)" id="cellx0y6"></td>
+                <td onclick="cellColorChange(this)" id="cellx1y6"></td>
+                <td onclick="cellColorChange(this)" id="cellx2y6"></td>
+                <td onclick="cellColorChange(this)" id="cellx3y6"></td>
+                <td onclick="cellColorChange(this)" id="cellx4y6"></td>
+                <td onclick="cellColorChange(this)" id="cellx5y6"></td>
+                <td onclick="cellColorChange(this)" id="cellx6y6"></td>
+                <td onclick="cellColorChange(this)" id="cellx7y6"></td>
+                <td onclick="cellColorChange(this)" id="cellx8y6"></td>
+                <td onclick="cellColorChange(this)" id="cellx9y6"></td>
+            </tr>
+            <tr>
+                <td onclick="cellColorChange(this)" id="cellx0y7"></td>
+                <td onclick="cellColorChange(this)" id="cellx1y7"></td>
+                <td onclick="cellColorChange(this)" id="cellx2y7"></td>
+                <td onclick="cellColorChange(this)" id="cellx3y7"></td>
+                <td onclick="cellColorChange(this)" id="cellx4y7"></td>
+                <td onclick="cellColorChange(this)" id="cellx5y7"></td>
+                <td onclick="cellColorChange(this)" id="cellx6y7"></td>
+                <td onclick="cellColorChange(this)" id="cellx7y7"></td>
+                <td onclick="cellColorChange(this)" id="cellx8y7"></td>
+                <td onclick="cellColorChange(this)" id="cellx9y7"></td>
+            </tr>
+            <tr>
+                <td onclick="cellColorChange(this)" id="cellx0y8"></td>
+                <td onclick="cellColorChange(this)" id="cellx1y8"></td>
+                <td onclick="cellColorChange(this)" id="cellx2y8"></td>
+                <td onclick="cellColorChange(this)" id="cellx3y8"></td>
+                <td onclick="cellColorChange(this)" id="cellx4y8"></td>
+                <td onclick="cellColorChange(this)" id="cellx5y8"></td>
+                <td onclick="cellColorChange(this)" id="cellx6y8"></td>
+                <td onclick="cellColorChange(this)" id="cellx7y8"></td>
+                <td onclick="cellColorChange(this)" id="cellx8y8"></td>
+                <td onclick="cellColorChange(this)" id="cellx9y8"></td>
+            </tr>
+            <tr>
+                <td onclick="cellColorChange(this)" id="cellx0y9"></td>
+                <td onclick="cellColorChange(this)" id="cellx1y9"></td>
+                <td onclick="cellColorChange(this)" id="cellx2y9"></td>
+                <td onclick="cellColorChange(this)" id="cellx3y9"></td>
+                <td onclick="cellColorChange(this)" id="cellx4y9"></td>
+                <td onclick="cellColorChange(this)" id="cellx5y9"></td>
+                <td onclick="cellColorChange(this)" id="cellx6y9"></td>
+                <td onclick="cellColorChange(this)" id="cellx7y9"></td>
+                <td onclick="cellColorChange(this)" id="cellx8y9"></td>
+                <td onclick="cellColorChange(this)" id="cellx9y9"></td>
+            </tr>
+        </table>
+        <table class="board">
+            <tr>
+                <td id="color0" onclick="changeColor(this)" style="background-color: #FFCC33"></td>
+                <td id="color1" onclick="changeColor(this)" style="background-color: #FF3300"></td>
+                <td id="color2" onclick="changeColor(this)" style="background-color: #CC00FF"></td>
+                <td id="color3" onclick="changeColor(this)" style="background-color: #3300CC"></td>
+                <td id="color4" onclick="changeColor(this)" style="background-color: #00CCFF"></td>
+                <td id="color5" onclick="changeColor(this)" style="background-color: #66CC00"></td>
+                <td id="color6" onclick="changeColor(this)" style="background-color: #660000"></td>
+                <td id="color7" onclick="changeColor(this)" style="background-color: #000000"></td>
+                <td id="color8" onclick="changeColor(this)" style="background-color: #999999"></td>
+                <td id="color9" onclick="changeColor(this)" style="background-color: #FFFFFF"></td>
+            </tr>
+        </table>
+        <script>
+            var color = "#FFFFFF";
+            function changeColor(newColor){
+                color = document.getElementById(newColor.id).style.backgroundColor;
+            }
+
+            function cellColorChange(newCell){
+                var cell = document.getElementById(newCell.id);
+                cell.style.backgroundColor = color;
+            }
+        </script>
+    </body>
+</html>
