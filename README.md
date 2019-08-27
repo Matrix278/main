@@ -1,3 +1,3 @@
 # My main Projects
-Translator Estonian-Russian - https://nitram278.000webhostapp.com/translatorEstRus/estonianToRussian.php <br/>
-Translator Russian-Estonian - https://nitram278.000webhostapp.com/translatorEstRus/russianToEstonian.php <br/>
+Translator Estonian-Russian - https://nitram278.000webhostapp.com/Other/translatorEstRus/estonianToRussian.php <br/>
+Translator Russian-Estonian - https://nitram278.000webhostapp.com/Other/translatorEstRus/russianToEstonian.php <br/>
